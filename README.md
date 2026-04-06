@@ -1,16 +1,29 @@
 Reddit Analyzer
+
 Инструкция запуска
+
 Убедитесь что Docker Desktop запущен и работает
+
 Склонируйте репозиторий и перейдите в папку проекта:
+
 cd RedditAnalyzer/RedditAnalyzer
+
 Соберите Docker образ:
+
 docker build -t reddit-analyzer .
+
 Запустите контейнер:
+
 docker run -p 5000:8080 reddit-analyzer
+
 Откройте в браузере:
+
 http://localhost:5000/swagger
+
 Пример запроса
+
 POST http://localhost:5000/api/reddit
+
 json{
   "items": [
     {
