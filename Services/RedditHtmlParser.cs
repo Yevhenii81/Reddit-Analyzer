@@ -11,7 +11,6 @@ public class RedditHtmlParser
 
         var posts = new List<(string Title, string Text, bool HasImage)>();
 
-        // Reddit old.reddit.com — стабильный HTML, не меняется
         var postNodes = doc.DocumentNode
             .SelectNodes("//div[contains(@class,'thing') and contains(@class,'link')]");
 
