@@ -1,0 +1,164 @@
+2026-03-28 17:56:14.858 +02:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2026-03-28 17:56:14.978 +02:00 [INF] Now listening on: https://localhost:7118
+2026-03-28 17:56:14.979 +02:00 [INF] Now listening on: http://localhost:5201
+2026-03-28 17:56:15.004 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2026-03-28 17:56:15.489 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-28 17:56:15.490 +02:00 [INF] Hosting environment: Development
+2026-03-28 17:56:15.490 +02:00 [INF] Content root path: C:\Users\major\source\repos\RedditAnalyzer\RedditAnalyzer
+2026-03-28 17:56:54.177 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7118/swagger - null null
+2026-03-28 17:56:54.469 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7118/swagger - 301 0 null 306.0733ms
+2026-03-28 17:56:54.480 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7118/swagger/index.html - null null
+2026-03-28 17:56:54.684 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7118/swagger/index.html - 200 null text/html;charset=utf-8 204.2908ms
+2026-03-28 17:56:54.695 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7118/swagger/swagger-ui.css - null null
+2026-03-28 17:56:54.695 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7118/swagger/swagger-ui-bundle.js - null null
+2026-03-28 17:56:54.696 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7118/swagger/swagger-ui-standalone-preset.js - null null
+2026-03-28 17:56:54.696 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7118/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-28 17:56:54.715 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7118/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 18.2088ms
+2026-03-28 17:56:54.744 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7118/_vs/browserLink - null null
+2026-03-28 17:56:54.823 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2026-03-28 17:56:54.823 +02:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2026-03-28 17:56:54.825 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7118/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 129.4479ms
+2026-03-28 17:56:54.829 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7118/swagger/swagger-ui.css - 200 152034 text/css 133.8039ms
+2026-03-28 17:56:54.894 +02:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2026-03-28 17:56:54.895 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7118/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 199.2918ms
+2026-03-28 17:56:54.928 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7118/_vs/browserLink - 200 null text/javascript; charset=UTF-8 186.2239ms
+2026-03-28 17:56:55.026 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7118/swagger/v1/swagger.json - null null
+2026-03-28 17:56:55.058 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7118/swagger/favicon-32x32.png - null null
+2026-03-28 17:56:55.062 +02:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2026-03-28 17:56:55.063 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7118/swagger/favicon-32x32.png - 200 628 image/png 5.5275ms
+2026-03-28 17:56:55.065 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7118/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 39.2273ms
+2026-03-28 17:58:10.765 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7118/weatherforecast - null null
+2026-03-28 17:58:10.796 +02:00 [INF] Executing endpoint 'HTTP: GET /weatherforecast'
+2026-03-28 17:58:10.822 +02:00 [INF] Executed endpoint 'HTTP: GET /weatherforecast'
+2026-03-28 17:58:10.823 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7118/weatherforecast - 200 null application/json; charset=utf-8 57.1987ms
+2026-03-28 17:58:27.284 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7118/swagger/index.html - null null
+2026-03-28 17:58:27.309 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7118/swagger/index.html - 200 null text/html;charset=utf-8 19.3434ms
+2026-03-28 17:58:27.352 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7118/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-28 17:58:27.367 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7118/_vs/browserLink - null null
+2026-03-28 17:58:27.368 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7118/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 16.5012ms
+2026-03-28 17:58:27.429 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7118/_vs/browserLink - 200 null text/javascript; charset=UTF-8 61.3566ms
+2026-03-28 17:58:27.482 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7118/swagger/v1/swagger.json - null null
+2026-03-28 17:58:27.483 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7118/swagger/favicon-32x32.png - null null
+2026-03-28 17:58:27.483 +02:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2026-03-28 17:58:27.483 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7118/swagger/favicon-32x32.png - 200 628 image/png 1.2523ms
+2026-03-28 17:58:27.483 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7118/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1.5936ms
+2026-03-28 17:58:58.633 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7118/weatherforecast - null null
+2026-03-28 17:58:58.634 +02:00 [INF] Executing endpoint 'HTTP: GET /weatherforecast'
+2026-03-28 17:58:58.634 +02:00 [INF] Executed endpoint 'HTTP: GET /weatherforecast'
+2026-03-28 17:58:58.635 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7118/weatherforecast - 200 null application/json; charset=utf-8 1.6209ms
+2026-03-28 17:59:04.338 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7118/weatherforecast - null null
+2026-03-28 17:59:04.338 +02:00 [INF] Executing endpoint 'HTTP: GET /weatherforecast'
+2026-03-28 17:59:04.338 +02:00 [INF] Executed endpoint 'HTTP: GET /weatherforecast'
+2026-03-28 17:59:04.339 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7118/weatherforecast - 200 null application/json; charset=utf-8 0.8988ms
+2026-03-28 17:59:52.044 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7118/swagger/index.html - null null
+2026-03-28 17:59:52.078 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7118/swagger/index.html - 200 null text/html;charset=utf-8 39.9279ms
+2026-03-28 17:59:52.139 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7118/_vs/browserLink - null null
+2026-03-28 17:59:52.140 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7118/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-28 17:59:52.154 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7118/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 14.4382ms
+2026-03-28 17:59:52.184 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7118/_vs/browserLink - 200 null text/javascript; charset=UTF-8 45.8397ms
+2026-03-28 17:59:52.229 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7118/swagger/favicon-32x32.png - null null
+2026-03-28 17:59:52.229 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7118/swagger/v1/swagger.json - null null
+2026-03-28 17:59:52.231 +02:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2026-03-28 17:59:52.231 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7118/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 7.5346ms
+2026-03-28 17:59:52.231 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7118/swagger/favicon-32x32.png - 200 628 image/png 2.2103ms
+2026-03-28 18:01:43.192 +02:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2026-03-28 18:01:43.234 +02:00 [INF] Now listening on: https://localhost:7118
+2026-03-28 18:01:43.235 +02:00 [INF] Now listening on: http://localhost:5201
+2026-03-28 18:01:43.294 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-28 18:01:43.295 +02:00 [INF] Hosting environment: Development
+2026-03-28 18:01:43.295 +02:00 [INF] Content root path: C:\Users\major\source\repos\RedditAnalyzer\RedditAnalyzer
+2026-03-28 18:01:43.587 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7118/swagger - null null
+2026-03-28 18:01:43.677 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7118/swagger - 301 0 null 91.5715ms
+2026-03-28 18:01:43.684 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7118/swagger/index.html - null null
+2026-03-28 18:01:43.743 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7118/swagger/index.html - 200 null text/html;charset=utf-8 59.5349ms
+2026-03-28 18:01:43.753 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7118/swagger/swagger-ui.css - null null
+2026-03-28 18:01:43.754 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7118/swagger/swagger-ui-bundle.js - null null
+2026-03-28 18:01:43.754 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7118/swagger/swagger-ui-standalone-preset.js - null null
+2026-03-28 18:01:43.755 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7118/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-28 18:01:43.762 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7118/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 6.8692ms
+2026-03-28 18:01:43.785 +02:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2026-03-28 18:01:43.785 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2026-03-28 18:01:43.788 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7118/swagger/swagger-ui.css - 200 152034 text/css 35.216ms
+2026-03-28 18:01:43.788 +02:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2026-03-28 18:01:43.788 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7118/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 34.0944ms
+2026-03-28 18:01:43.788 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7118/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 34.7454ms
+2026-03-28 18:01:43.810 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7118/_vs/browserLink - null null
+2026-03-28 18:01:43.839 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7118/_vs/browserLink - 200 null text/javascript; charset=UTF-8 28.5757ms
+2026-03-28 18:01:43.967 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7118/swagger/v1/swagger.json - null null
+2026-03-28 18:01:43.972 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7118/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 4.9554ms
+2026-03-28 18:02:52.781 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7118/api/reddit - application/json 115
+2026-03-28 18:02:52.786 +02:00 [INF] Executing endpoint 'RedditAnalyzer.Controllers.RedditController.Analyze (RedditAnalyzer)'
+2026-03-28 18:02:52.847 +02:00 [INF] Route matched with {action = "Analyze", controller = "Reddit"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Analyze(RedditAnalyzer.Models.RequestModel) on controller RedditAnalyzer.Controllers.RedditController (RedditAnalyzer).
+2026-03-28 18:02:52.953 +02:00 [INF] Start processing HTTP request GET https://www.reddit.com/r/nature.json?limit=5
+2026-03-28 18:02:52.960 +02:00 [INF] Sending HTTP request GET https://www.reddit.com/r/nature.json?limit=5
+2026-03-28 18:02:53.754 +02:00 [INF] Received HTTP response headers after 790.4633ms - 200
+2026-03-28 18:02:53.759 +02:00 [INF] End processing HTTP request after 808.3124ms - 200
+2026-03-28 18:02:53.976 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-28 18:02:53.987 +02:00 [INF] Executed action RedditAnalyzer.Controllers.RedditController.Analyze (RedditAnalyzer) in 1134.6383ms
+2026-03-28 18:02:53.989 +02:00 [INF] Executed endpoint 'RedditAnalyzer.Controllers.RedditController.Analyze (RedditAnalyzer)'
+2026-03-28 18:02:53.989 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7118/api/reddit - 200 null application/json; charset=utf-8 1208.127ms
+2026-03-28 16:51:12.881 +00:00 [INF] Now listening on: http://[::]:8080
+2026-03-28 16:51:12.916 +00:00 [INF] Now listening on: https://[::]:8081
+2026-03-28 16:51:12.919 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-28 16:51:12.920 +00:00 [INF] Hosting environment: Development
+2026-03-28 16:51:12.921 +00:00 [INF] Content root path: /app
+2026-03-28 16:51:41.860 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32769/swagger - null null
+2026-03-28 16:51:41.892 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32769/swagger - 301 0 null 32.1805ms
+2026-03-28 16:51:41.898 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32769/swagger/index.html - null null
+2026-03-28 16:51:42.009 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32769/swagger/index.html - 200 null text/html;charset=utf-8 110.5876ms
+2026-03-28 16:51:42.042 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32769/swagger/swagger-ui.css - null null
+2026-03-28 16:51:42.047 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32769/swagger/swagger-ui-bundle.js - null null
+2026-03-28 16:51:42.050 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32769/swagger/swagger-ui-standalone-preset.js - null null
+2026-03-28 16:51:42.215 +00:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2026-03-28 16:51:42.215 +00:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2026-03-28 16:51:42.216 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32769/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 166.2153ms
+2026-03-28 16:51:42.217 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32769/swagger/swagger-ui.css - 200 152034 text/css 175.1297ms
+2026-03-28 16:51:42.291 +00:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2026-03-28 16:51:42.292 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32769/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 245.324ms
+2026-03-28 16:51:42.442 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32769/swagger/v1/swagger.json - null null
+2026-03-28 16:51:42.484 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32769/swagger/favicon-32x32.png - null null
+2026-03-28 16:51:42.485 +00:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2026-03-28 16:51:42.486 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32769/swagger/favicon-32x32.png - 200 628 image/png 1.8393ms
+2026-03-28 16:51:42.528 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32769/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 85.8389ms
+2026-03-28 16:54:15.493 +00:00 [INF] Request starting HTTP/2 POST https://localhost:32769/api/reddit - application/json 210
+2026-03-28 16:54:15.527 +00:00 [INF] Executing endpoint 'RedditAnalyzer.Controllers.RedditController.Analyze (RedditAnalyzer)'
+2026-03-28 16:54:15.594 +00:00 [INF] Route matched with {action = "Analyze", controller = "Reddit"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Analyze(RedditAnalyzer.Models.RequestModel) on controller RedditAnalyzer.Controllers.RedditController (RedditAnalyzer).
+2026-03-28 16:54:15.843 +00:00 [INF] Start processing HTTP request GET https://www.reddit.com/r/nature.json?limit=15
+2026-03-28 16:54:15.850 +00:00 [INF] Sending HTTP request GET https://www.reddit.com/r/nature.json?limit=15
+2026-03-28 16:54:15.910 +00:00 [INF] Start processing HTTP request GET https://www.reddit.com/r/aww.json?limit=15
+2026-03-28 16:54:15.912 +00:00 [INF] Sending HTTP request GET https://www.reddit.com/r/aww.json?limit=15
+2026-03-28 16:54:16.845 +00:00 [INF] Received HTTP response headers after 983.2823ms - 200
+2026-03-28 16:54:16.844 +00:00 [INF] Received HTTP response headers after 920.1654ms - 200
+2026-03-28 16:54:16.850 +00:00 [INF] End processing HTTP request after 1012.0453ms - 200
+2026-03-28 16:54:16.852 +00:00 [INF] End processing HTTP request after 942.3304ms - 200
+2026-03-28 16:54:17.324 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-28 16:54:17.355 +00:00 [INF] Executed action RedditAnalyzer.Controllers.RedditController.Analyze (RedditAnalyzer) in 1752.196ms
+2026-03-28 16:54:17.356 +00:00 [INF] Executed endpoint 'RedditAnalyzer.Controllers.RedditController.Analyze (RedditAnalyzer)'
+2026-03-28 16:54:17.357 +00:00 [INF] Request finished HTTP/2 POST https://localhost:32769/api/reddit - 200 null application/json; charset=utf-8 1886.6025ms
+2026-03-28 17:00:02.425 +00:00 [INF] Now listening on: http://[::]:8080
+2026-03-28 17:00:02.481 +00:00 [INF] Now listening on: https://[::]:8081
+2026-03-28 17:00:02.486 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-28 17:00:02.487 +00:00 [INF] Hosting environment: Development
+2026-03-28 17:00:02.488 +00:00 [INF] Content root path: /app
+2026-03-28 17:00:21.851 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:32768/swagger - null null
+2026-03-28 17:00:21.895 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:32768/swagger - 301 0 null 45.7354ms
+2026-03-28 17:00:21.898 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:32768/swagger/index.html - null null
+2026-03-28 17:00:22.000 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:32768/swagger/index.html - 200 null text/html;charset=utf-8 101.8261ms
+2026-03-28 17:00:22.022 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:32768/swagger/swagger-ui.css - null null
+2026-03-28 17:00:22.022 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:32768/swagger/swagger-ui-bundle.js - null null
+2026-03-28 17:00:22.046 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:32768/swagger/swagger-ui-standalone-preset.js - null null
+2026-03-28 17:00:22.058 +00:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2026-03-28 17:00:22.064 +00:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2026-03-28 17:00:22.066 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:32768/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 19.1057ms
+2026-03-28 17:00:22.064 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:32768/swagger/swagger-ui.css - 200 152034 text/css 42.4486ms
+2026-03-28 17:00:22.089 +00:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2026-03-28 17:00:22.091 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:32768/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 69.2599ms
+2026-03-28 17:00:22.287 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:32768/swagger/v1/swagger.json - null null
+2026-03-28 17:00:22.304 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:32768/swagger/favicon-32x32.png - null null
+2026-03-28 17:00:22.304 +00:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2026-03-28 17:00:22.305 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:32768/swagger/favicon-32x32.png - 200 628 image/png 1.43ms
+2026-03-28 17:00:22.362 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:32768/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 75.0423ms
+2026-03-28 17:00:32.132 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32769/swagger/index.html - null null
+2026-03-28 17:00:32.139 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32769/swagger/index.html - 200 null text/html;charset=utf-8 6.7568ms
+2026-03-28 17:00:32.394 +00:00 [INF] Request starting HTTP/2 GET https://localhost:32769/swagger/v1/swagger.json - null null
+2026-03-28 17:00:32.400 +00:00 [INF] Request finished HTTP/2 GET https://localhost:32769/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 5.9951ms
