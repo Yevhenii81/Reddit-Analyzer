@@ -20,14 +20,23 @@ cd RedditAnalyzer
 Запустите проект:Bashdocker-compose up --build
 
 Сервис будет доступен по адресу:
+
 http://localhost:5000
+
 Swagger UI: http://localhost:5000/swagger
+
 Примеры запросов
+
 Быстрый режим (old.reddit.com)
+
 httpPOST http://localhost:5000/api/reddit
+
 Playwright режим (новый Reddit)
+
 httpPOST http://localhost:5000/api/reddit/playwright
+
 Тело запроса (для обоих эндпоинтов):
+
 JSON{
   "items": [
     {
