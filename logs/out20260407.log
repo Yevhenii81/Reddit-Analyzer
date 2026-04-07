@@ -1,0 +1,544 @@
+2026-04-07 10:39:03.645 +00:00 [INF] Application is shutting down...
+2026-04-07 11:10:57.451 +00:00 [WRN] Overriding HTTP_PORTS '8080' and HTTPS_PORTS ''. Binding to values defined by URLS instead 'http://+:8080'.
+2026-04-07 11:10:57.607 +00:00 [INF] Now listening on: http://[::]:8080
+2026-04-07 11:10:57.609 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-07 11:10:57.611 +00:00 [INF] Hosting environment: Production
+2026-04-07 11:10:57.612 +00:00 [INF] Content root path: /app
+2026-04-07 11:11:25.234 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/ - null null
+2026-04-07 11:11:25.278 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/ - 404 0 null 45.0483ms
+2026-04-07 11:11:25.287 +00:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/, Response status code: 404
+2026-04-07 11:11:29.022 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2026-04-07 11:11:29.075 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 52.816ms
+2026-04-07 11:11:29.205 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2026-04-07 11:11:29.262 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 57.1333ms
+2026-04-07 11:11:46.349 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/reddit - application/json 116
+2026-04-07 11:11:46.354 +00:00 [INF] Executing endpoint 'RedditAnalyzer.Controllers.RedditController.Analyze (RedditAnalyzer)'
+2026-04-07 11:11:46.376 +00:00 [INF] Route matched with {action = "Analyze", controller = "Reddit"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Analyze(RedditAnalyzer.Models.RequestModel) on controller RedditAnalyzer.Controllers.RedditController (RedditAnalyzer).
+2026-04-07 11:11:46.429 +00:00 [INF] Fetching HTML for r/nature
+2026-04-07 11:11:46.435 +00:00 [INF] Start processing HTTP request GET https://old.reddit.com/r/nature?limit=25
+2026-04-07 11:11:46.437 +00:00 [INF] Sending HTTP request GET https://old.reddit.com/r/nature?limit=25
+2026-04-07 11:11:47.744 +00:00 [INF] Received HTTP response headers after 1303.719ms - 200
+2026-04-07 11:11:47.745 +00:00 [INF] End processing HTTP request after 1312.6456ms - 200
+2026-04-07 11:11:48.075 +00:00 [INF] Done for r/nature, found 1 posts
+2026-04-07 11:11:48.083 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-07 11:11:48.092 +00:00 [INF] Executed action RedditAnalyzer.Controllers.RedditController.Analyze (RedditAnalyzer) in 1713.058ms
+2026-04-07 11:11:48.094 +00:00 [INF] Executed endpoint 'RedditAnalyzer.Controllers.RedditController.Analyze (RedditAnalyzer)'
+2026-04-07 11:11:48.095 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/reddit - 200 null application/json; charset=utf-8 1747.5076ms
+2026-04-07 11:11:49.643 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/reddit - application/json 116
+2026-04-07 11:11:49.646 +00:00 [INF] Executing endpoint 'RedditAnalyzer.Controllers.RedditController.Analyze (RedditAnalyzer)'
+2026-04-07 11:11:49.647 +00:00 [INF] Route matched with {action = "Analyze", controller = "Reddit"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Analyze(RedditAnalyzer.Models.RequestModel) on controller RedditAnalyzer.Controllers.RedditController (RedditAnalyzer).
+2026-04-07 11:11:49.652 +00:00 [INF] Fetching HTML for r/nature
+2026-04-07 11:11:49.653 +00:00 [INF] Start processing HTTP request GET https://old.reddit.com/r/nature?limit=25
+2026-04-07 11:11:49.653 +00:00 [INF] Sending HTTP request GET https://old.reddit.com/r/nature?limit=25
+2026-04-07 11:11:50.716 +00:00 [INF] Received HTTP response headers after 1061.8044ms - 200
+2026-04-07 11:11:50.717 +00:00 [INF] End processing HTTP request after 1063.7744ms - 200
+2026-04-07 11:11:51.089 +00:00 [INF] Done for r/nature, found 1 posts
+2026-04-07 11:11:51.090 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-07 11:11:51.091 +00:00 [INF] Executed action RedditAnalyzer.Controllers.RedditController.Analyze (RedditAnalyzer) in 1440.3806ms
+2026-04-07 11:11:51.092 +00:00 [INF] Executed endpoint 'RedditAnalyzer.Controllers.RedditController.Analyze (RedditAnalyzer)'
+2026-04-07 11:11:51.093 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/reddit - 200 null application/json; charset=utf-8 1449.9002ms
+2026-04-07 11:12:13.054 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/reddit/playwright - application/json 116
+2026-04-07 11:12:13.056 +00:00 [INF] Executing endpoint 'RedditAnalyzer.Controllers.RedditController.AnalyzeWithPlaywright (RedditAnalyzer)'
+2026-04-07 11:12:13.062 +00:00 [INF] Route matched with {action = "AnalyzeWithPlaywright", controller = "Reddit"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AnalyzeWithPlaywright(RedditAnalyzer.Models.RequestModel) on controller RedditAnalyzer.Controllers.RedditController (RedditAnalyzer).
+2026-04-07 11:12:13.067 +00:00 [INF] Fetching via Playwright for r/nature
+2026-04-07 11:12:18.513 +00:00 [INF] Done for r/nature, found 0 posts
+2026-04-07 11:12:18.568 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-07 11:12:18.573 +00:00 [INF] Executed action RedditAnalyzer.Controllers.RedditController.AnalyzeWithPlaywright (RedditAnalyzer) in 5509.576ms
+2026-04-07 11:12:18.575 +00:00 [INF] Executed endpoint 'RedditAnalyzer.Controllers.RedditController.AnalyzeWithPlaywright (RedditAnalyzer)'
+2026-04-07 11:12:18.577 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/reddit/playwright - 200 null application/json; charset=utf-8 5522.5585ms
+2026-04-07 11:16:26.200 +00:00 [INF] Application is shutting down...
+2026-04-07 11:16:27.181 +00:00 [WRN] Overriding HTTP_PORTS '8080' and HTTPS_PORTS ''. Binding to values defined by URLS instead 'http://+:8080'.
+2026-04-07 11:16:27.273 +00:00 [INF] Now listening on: http://[::]:8080
+2026-04-07 11:16:27.276 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-07 11:16:27.277 +00:00 [INF] Hosting environment: Production
+2026-04-07 11:16:27.280 +00:00 [INF] Content root path: /app
+2026-04-07 11:16:31.862 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/ - null null
+2026-04-07 11:16:31.895 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/ - 404 0 null 34.3893ms
+2026-04-07 11:16:31.903 +00:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/, Response status code: 404
+2026-04-07 11:16:40.598 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2026-04-07 11:16:40.650 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 51.7987ms
+2026-04-07 11:16:40.791 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2026-04-07 11:16:40.855 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 63.2159ms
+2026-04-07 11:17:03.467 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/reddit - application/json 116
+2026-04-07 11:17:03.474 +00:00 [INF] Executing endpoint 'RedditAnalyzer.Controllers.RedditController.Analyze (RedditAnalyzer)'
+2026-04-07 11:17:03.496 +00:00 [INF] Route matched with {action = "Analyze", controller = "Reddit"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Analyze(RedditAnalyzer.Models.RequestModel) on controller RedditAnalyzer.Controllers.RedditController (RedditAnalyzer).
+2026-04-07 11:17:03.546 +00:00 [INF] Fetching HTML for r/nature
+2026-04-07 11:17:03.551 +00:00 [INF] Start processing HTTP request GET https://old.reddit.com/r/nature?limit=25
+2026-04-07 11:17:03.555 +00:00 [INF] Sending HTTP request GET https://old.reddit.com/r/nature?limit=25
+2026-04-07 11:17:05.087 +00:00 [INF] Received HTTP response headers after 1528.7668ms - 200
+2026-04-07 11:17:05.088 +00:00 [INF] End processing HTTP request after 1539.5469ms - 200
+2026-04-07 11:17:05.501 +00:00 [INF] Done for r/nature, found 1 posts
+2026-04-07 11:17:05.506 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-07 11:17:05.518 +00:00 [INF] Executed action RedditAnalyzer.Controllers.RedditController.Analyze (RedditAnalyzer) in 2017.8699ms
+2026-04-07 11:17:05.520 +00:00 [INF] Executed endpoint 'RedditAnalyzer.Controllers.RedditController.Analyze (RedditAnalyzer)'
+2026-04-07 11:17:05.521 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/reddit - 200 null application/json; charset=utf-8 2054.2165ms
+2026-04-07 11:17:06.659 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/reddit - application/json 116
+2026-04-07 11:17:06.660 +00:00 [INF] Executing endpoint 'RedditAnalyzer.Controllers.RedditController.Analyze (RedditAnalyzer)'
+2026-04-07 11:17:06.662 +00:00 [INF] Route matched with {action = "Analyze", controller = "Reddit"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Analyze(RedditAnalyzer.Models.RequestModel) on controller RedditAnalyzer.Controllers.RedditController (RedditAnalyzer).
+2026-04-07 11:17:06.665 +00:00 [INF] Fetching HTML for r/nature
+2026-04-07 11:17:06.666 +00:00 [INF] Start processing HTTP request GET https://old.reddit.com/r/nature?limit=25
+2026-04-07 11:17:06.667 +00:00 [INF] Sending HTTP request GET https://old.reddit.com/r/nature?limit=25
+2026-04-07 11:17:07.682 +00:00 [INF] Received HTTP response headers after 1014.5358ms - 200
+2026-04-07 11:17:07.684 +00:00 [INF] End processing HTTP request after 1017.8405ms - 200
+2026-04-07 11:17:07.922 +00:00 [INF] Done for r/nature, found 1 posts
+2026-04-07 11:17:07.923 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-07 11:17:07.926 +00:00 [INF] Executed action RedditAnalyzer.Controllers.RedditController.Analyze (RedditAnalyzer) in 1262.3272ms
+2026-04-07 11:17:07.928 +00:00 [INF] Executed endpoint 'RedditAnalyzer.Controllers.RedditController.Analyze (RedditAnalyzer)'
+2026-04-07 11:17:07.929 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/reddit - 200 null application/json; charset=utf-8 1269.8698ms
+2026-04-07 11:17:16.642 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/reddit/playwright - application/json 116
+2026-04-07 11:17:16.644 +00:00 [INF] Executing endpoint 'RedditAnalyzer.Controllers.RedditController.AnalyzeWithPlaywright (RedditAnalyzer)'
+2026-04-07 11:17:16.651 +00:00 [INF] Route matched with {action = "AnalyzeWithPlaywright", controller = "Reddit"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AnalyzeWithPlaywright(RedditAnalyzer.Models.RequestModel) on controller RedditAnalyzer.Controllers.RedditController (RedditAnalyzer).
+2026-04-07 11:17:16.655 +00:00 [INF] Fetching via Playwright for r/nature
+2026-04-07 11:17:36.147 +00:00 [WRN] Timeout for r/nature — Reddit blocked or slow
+2026-04-07 11:17:36.152 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-07 11:17:36.157 +00:00 [INF] Executed action RedditAnalyzer.Controllers.RedditController.AnalyzeWithPlaywright (RedditAnalyzer) in 19505.1693ms
+2026-04-07 11:17:36.159 +00:00 [INF] Executed endpoint 'RedditAnalyzer.Controllers.RedditController.AnalyzeWithPlaywright (RedditAnalyzer)'
+2026-04-07 11:17:36.164 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/reddit/playwright - 200 null application/json; charset=utf-8 19521.8925ms
+2026-04-07 11:17:37.980 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/reddit/playwright - application/json 116
+2026-04-07 11:17:37.982 +00:00 [INF] Executing endpoint 'RedditAnalyzer.Controllers.RedditController.AnalyzeWithPlaywright (RedditAnalyzer)'
+2026-04-07 11:17:37.985 +00:00 [INF] Route matched with {action = "AnalyzeWithPlaywright", controller = "Reddit"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AnalyzeWithPlaywright(RedditAnalyzer.Models.RequestModel) on controller RedditAnalyzer.Controllers.RedditController (RedditAnalyzer).
+2026-04-07 11:17:37.988 +00:00 [INF] Fetching via Playwright for r/nature
+2026-04-07 11:17:53.317 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2026-04-07 11:17:53.318 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 1.511ms
+2026-04-07 11:17:53.421 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2026-04-07 11:17:53.429 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 7.4983ms
+2026-04-07 11:17:57.201 +00:00 [WRN] Timeout for r/nature — Reddit blocked or slow
+2026-04-07 11:17:57.205 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-07 11:17:57.211 +00:00 [INF] Executed action RedditAnalyzer.Controllers.RedditController.AnalyzeWithPlaywright (RedditAnalyzer) in 19195.9121ms
+2026-04-07 11:17:57.215 +00:00 [INF] Executed endpoint 'RedditAnalyzer.Controllers.RedditController.AnalyzeWithPlaywright (RedditAnalyzer)'
+2026-04-07 11:17:57.222 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/reddit/playwright - 499 null application/json; charset=utf-8 19214.8558ms
+2026-04-07 11:18:00.320 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/reddit/playwright - application/json 116
+2026-04-07 11:18:00.322 +00:00 [INF] Executing endpoint 'RedditAnalyzer.Controllers.RedditController.AnalyzeWithPlaywright (RedditAnalyzer)'
+2026-04-07 11:18:00.323 +00:00 [INF] Route matched with {action = "AnalyzeWithPlaywright", controller = "Reddit"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AnalyzeWithPlaywright(RedditAnalyzer.Models.RequestModel) on controller RedditAnalyzer.Controllers.RedditController (RedditAnalyzer).
+2026-04-07 11:18:00.325 +00:00 [INF] Fetching via Playwright for r/nature
+2026-04-07 11:18:18.788 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/ - null null
+2026-04-07 11:18:18.791 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/ - 404 0 null 3.0302ms
+2026-04-07 11:18:18.804 +00:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/, Response status code: 404
+2026-04-07 11:18:19.630 +00:00 [WRN] Timeout for r/nature — Reddit blocked or slow
+2026-04-07 11:18:19.641 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-07 11:18:19.648 +00:00 [INF] Executed action RedditAnalyzer.Controllers.RedditController.AnalyzeWithPlaywright (RedditAnalyzer) in 19295.6569ms
+2026-04-07 11:18:19.651 +00:00 [INF] Executed endpoint 'RedditAnalyzer.Controllers.RedditController.AnalyzeWithPlaywright (RedditAnalyzer)'
+2026-04-07 11:18:19.654 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/reddit/playwright - 499 null application/json; charset=utf-8 19306.3153ms
+2026-04-07 11:18:23.724 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2026-04-07 11:18:23.727 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 2.9083ms
+2026-04-07 11:18:23.867 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2026-04-07 11:18:23.874 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 7.2221ms
+2026-04-07 11:18:28.838 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/reddit/playwright - application/json 116
+2026-04-07 11:18:28.840 +00:00 [INF] Executing endpoint 'RedditAnalyzer.Controllers.RedditController.AnalyzeWithPlaywright (RedditAnalyzer)'
+2026-04-07 11:18:28.842 +00:00 [INF] Route matched with {action = "AnalyzeWithPlaywright", controller = "Reddit"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AnalyzeWithPlaywright(RedditAnalyzer.Models.RequestModel) on controller RedditAnalyzer.Controllers.RedditController (RedditAnalyzer).
+2026-04-07 11:18:28.845 +00:00 [INF] Fetching via Playwright for r/nature
+2026-04-07 11:18:39.045 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/reddit - application/json 116
+2026-04-07 11:18:39.046 +00:00 [INF] Executing endpoint 'RedditAnalyzer.Controllers.RedditController.Analyze (RedditAnalyzer)'
+2026-04-07 11:18:39.049 +00:00 [INF] Route matched with {action = "Analyze", controller = "Reddit"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Analyze(RedditAnalyzer.Models.RequestModel) on controller RedditAnalyzer.Controllers.RedditController (RedditAnalyzer).
+2026-04-07 11:18:39.050 +00:00 [INF] Fetching HTML for r/nature
+2026-04-07 11:18:39.053 +00:00 [INF] Start processing HTTP request GET https://old.reddit.com/r/nature?limit=25
+2026-04-07 11:18:39.055 +00:00 [INF] Sending HTTP request GET https://old.reddit.com/r/nature?limit=25
+2026-04-07 11:18:40.194 +00:00 [INF] Received HTTP response headers after 1109.748ms - 200
+2026-04-07 11:18:40.196 +00:00 [INF] End processing HTTP request after 1114.9114ms - 200
+2026-04-07 11:18:40.447 +00:00 [INF] Done for r/nature, found 1 posts
+2026-04-07 11:18:40.457 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-07 11:18:40.465 +00:00 [INF] Executed action RedditAnalyzer.Controllers.RedditController.Analyze (RedditAnalyzer) in 1388.3278ms
+2026-04-07 11:18:40.478 +00:00 [INF] Executed endpoint 'RedditAnalyzer.Controllers.RedditController.Analyze (RedditAnalyzer)'
+2026-04-07 11:18:40.490 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/reddit - 200 null application/json; charset=utf-8 1417.5848ms
+2026-04-07 11:18:46.315 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2026-04-07 11:18:46.326 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 10.9539ms
+2026-04-07 11:18:46.429 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2026-04-07 11:18:46.444 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 14.5404ms
+2026-04-07 11:18:48.020 +00:00 [WRN] Timeout for r/nature — Reddit blocked or slow
+2026-04-07 11:18:48.020 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-07 11:18:48.021 +00:00 [INF] Executed action RedditAnalyzer.Controllers.RedditController.AnalyzeWithPlaywright (RedditAnalyzer) in 19149.0876ms
+2026-04-07 11:18:48.024 +00:00 [INF] Executed endpoint 'RedditAnalyzer.Controllers.RedditController.AnalyzeWithPlaywright (RedditAnalyzer)'
+2026-04-07 11:18:48.024 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/reddit/playwright - 499 null application/json; charset=utf-8 19159.0096ms
+2026-04-07 11:18:53.162 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/reddit - application/json 116
+2026-04-07 11:18:53.163 +00:00 [INF] Executing endpoint 'RedditAnalyzer.Controllers.RedditController.Analyze (RedditAnalyzer)'
+2026-04-07 11:18:53.164 +00:00 [INF] Route matched with {action = "Analyze", controller = "Reddit"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Analyze(RedditAnalyzer.Models.RequestModel) on controller RedditAnalyzer.Controllers.RedditController (RedditAnalyzer).
+2026-04-07 11:18:53.165 +00:00 [INF] Fetching HTML for r/nature
+2026-04-07 11:18:53.170 +00:00 [INF] Start processing HTTP request GET https://old.reddit.com/r/nature?limit=25
+2026-04-07 11:18:53.171 +00:00 [INF] Sending HTTP request GET https://old.reddit.com/r/nature?limit=25
+2026-04-07 11:18:54.147 +00:00 [INF] Received HTTP response headers after 974.6059ms - 200
+2026-04-07 11:18:54.163 +00:00 [INF] End processing HTTP request after 993.1769ms - 200
+2026-04-07 11:18:54.396 +00:00 [INF] Done for r/nature, found 1 posts
+2026-04-07 11:18:54.401 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-07 11:18:54.410 +00:00 [INF] Executed action RedditAnalyzer.Controllers.RedditController.Analyze (RedditAnalyzer) in 1244.7572ms
+2026-04-07 11:18:54.417 +00:00 [INF] Executed endpoint 'RedditAnalyzer.Controllers.RedditController.Analyze (RedditAnalyzer)'
+2026-04-07 11:18:54.424 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/reddit - 200 null application/json; charset=utf-8 1261.5367ms
+2026-04-07 11:19:01.214 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/reddit/playwright - application/json 116
+2026-04-07 11:19:01.215 +00:00 [INF] Executing endpoint 'RedditAnalyzer.Controllers.RedditController.AnalyzeWithPlaywright (RedditAnalyzer)'
+2026-04-07 11:19:01.216 +00:00 [INF] Route matched with {action = "AnalyzeWithPlaywright", controller = "Reddit"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AnalyzeWithPlaywright(RedditAnalyzer.Models.RequestModel) on controller RedditAnalyzer.Controllers.RedditController (RedditAnalyzer).
+2026-04-07 11:19:01.220 +00:00 [INF] Fetching via Playwright for r/nature
+2026-04-07 11:19:31.601 +00:00 [WRN] Timeout for r/nature — Reddit blocked or slow
+2026-04-07 11:19:31.616 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-07 11:19:31.618 +00:00 [INF] Executed action RedditAnalyzer.Controllers.RedditController.AnalyzeWithPlaywright (RedditAnalyzer) in 30368.2231ms
+2026-04-07 11:19:31.623 +00:00 [INF] Executed endpoint 'RedditAnalyzer.Controllers.RedditController.AnalyzeWithPlaywright (RedditAnalyzer)'
+2026-04-07 11:19:31.624 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/reddit/playwright - 200 null application/json; charset=utf-8 30379.555ms
+2026-04-07 11:19:35.650 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/reddit/playwright - application/json 116
+2026-04-07 11:19:35.652 +00:00 [INF] Executing endpoint 'RedditAnalyzer.Controllers.RedditController.AnalyzeWithPlaywright (RedditAnalyzer)'
+2026-04-07 11:19:35.654 +00:00 [INF] Route matched with {action = "AnalyzeWithPlaywright", controller = "Reddit"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AnalyzeWithPlaywright(RedditAnalyzer.Models.RequestModel) on controller RedditAnalyzer.Controllers.RedditController (RedditAnalyzer).
+2026-04-07 11:19:35.658 +00:00 [INF] Fetching via Playwright for r/nature
+2026-04-07 11:19:54.954 +00:00 [WRN] Timeout for r/nature — Reddit blocked or slow
+2026-04-07 11:19:54.959 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-07 11:19:54.964 +00:00 [INF] Executed action RedditAnalyzer.Controllers.RedditController.AnalyzeWithPlaywright (RedditAnalyzer) in 19281.1785ms
+2026-04-07 11:19:54.970 +00:00 [INF] Executed endpoint 'RedditAnalyzer.Controllers.RedditController.AnalyzeWithPlaywright (RedditAnalyzer)'
+2026-04-07 11:19:54.974 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/reddit/playwright - 200 null application/json; charset=utf-8 19298.836ms
+2026-04-07 11:20:25.051 +00:00 [INF] Application is shutting down...
+2026-04-07 11:39:33.692 +00:00 [WRN] Overriding HTTP_PORTS '8080' and HTTPS_PORTS ''. Binding to values defined by URLS instead 'http://+:8080'.
+2026-04-07 11:39:33.844 +00:00 [INF] Now listening on: http://[::]:8080
+2026-04-07 11:39:33.845 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-07 11:39:33.846 +00:00 [INF] Hosting environment: Production
+2026-04-07 11:39:33.849 +00:00 [INF] Content root path: /app
+2026-04-07 11:39:39.913 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/ - null null
+2026-04-07 11:39:39.953 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/ - 404 0 null 41.0998ms
+2026-04-07 11:39:39.976 +00:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/, Response status code: 404
+2026-04-07 11:39:44.029 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2026-04-07 11:39:44.101 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 72.4486ms
+2026-04-07 11:39:44.245 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2026-04-07 11:39:44.313 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 68.8069ms
+2026-04-07 11:41:06.884 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/reddit - application/json 116
+2026-04-07 11:41:06.900 +00:00 [INF] Executing endpoint 'RedditAnalyzer.Controllers.RedditController.Analyze (RedditAnalyzer)'
+2026-04-07 11:41:06.956 +00:00 [INF] Route matched with {action = "Analyze", controller = "Reddit"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Analyze(RedditAnalyzer.Models.RequestModel) on controller RedditAnalyzer.Controllers.RedditController (RedditAnalyzer).
+2026-04-07 11:41:07.054 +00:00 [INF] Fetching HTML for r/nature
+2026-04-07 11:41:07.082 +00:00 [INF] Start processing HTTP request GET https://old.reddit.com/r/nature?limit=25
+2026-04-07 11:41:07.099 +00:00 [INF] Sending HTTP request GET https://old.reddit.com/r/nature?limit=25
+2026-04-07 11:41:08.839 +00:00 [INF] Received HTTP response headers after 1727.3836ms - 200
+2026-04-07 11:41:08.855 +00:00 [INF] End processing HTTP request after 1778.5626ms - 200
+2026-04-07 11:41:09.147 +00:00 [INF] Done for r/nature, found 1 posts
+2026-04-07 11:41:09.153 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-07 11:41:09.169 +00:00 [INF] Executed action RedditAnalyzer.Controllers.RedditController.Analyze (RedditAnalyzer) in 2196.8674ms
+2026-04-07 11:41:09.171 +00:00 [INF] Executed endpoint 'RedditAnalyzer.Controllers.RedditController.Analyze (RedditAnalyzer)'
+2026-04-07 11:41:09.174 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/reddit - 200 null application/json; charset=utf-8 2289.9849ms
+2026-04-07 11:41:10.397 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/reddit - application/json 116
+2026-04-07 11:41:10.404 +00:00 [INF] Executing endpoint 'RedditAnalyzer.Controllers.RedditController.Analyze (RedditAnalyzer)'
+2026-04-07 11:41:10.408 +00:00 [INF] Route matched with {action = "Analyze", controller = "Reddit"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Analyze(RedditAnalyzer.Models.RequestModel) on controller RedditAnalyzer.Controllers.RedditController (RedditAnalyzer).
+2026-04-07 11:41:10.414 +00:00 [INF] Fetching HTML for r/nature
+2026-04-07 11:41:10.425 +00:00 [INF] Start processing HTTP request GET https://old.reddit.com/r/nature?limit=25
+2026-04-07 11:41:10.427 +00:00 [INF] Sending HTTP request GET https://old.reddit.com/r/nature?limit=25
+2026-04-07 11:41:11.675 +00:00 [INF] Received HTTP response headers after 1216.1891ms - 200
+2026-04-07 11:41:11.689 +00:00 [INF] End processing HTTP request after 1235.3557ms - 200
+2026-04-07 11:41:11.841 +00:00 [INF] Done for r/nature, found 1 posts
+2026-04-07 11:41:11.845 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-07 11:41:11.847 +00:00 [INF] Executed action RedditAnalyzer.Controllers.RedditController.Analyze (RedditAnalyzer) in 1407.2023ms
+2026-04-07 11:41:11.850 +00:00 [INF] Executed endpoint 'RedditAnalyzer.Controllers.RedditController.Analyze (RedditAnalyzer)'
+2026-04-07 11:41:11.855 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/reddit - 200 null application/json; charset=utf-8 1429.4873ms
+2026-04-07 11:41:20.450 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/reddit/playwright - application/json 116
+2026-04-07 11:41:20.453 +00:00 [INF] Executing endpoint 'RedditAnalyzer.Controllers.RedditController.AnalyzeWithPlaywright (RedditAnalyzer)'
+2026-04-07 11:41:20.468 +00:00 [INF] Route matched with {action = "AnalyzeWithPlaywright", controller = "Reddit"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AnalyzeWithPlaywright(RedditAnalyzer.Models.RequestModel) on controller RedditAnalyzer.Controllers.RedditController (RedditAnalyzer).
+2026-04-07 11:41:20.478 +00:00 [INF] 🚀 Playwright start r/nature
+2026-04-07 11:41:54.206 +00:00 [ERR] ❌ Помилка r/nature
+System.TimeoutException: Timeout 25000ms exceeded.
+Call log:
+  - waiting for Locator("[data-testid='post-container']") to be visible
+   at Microsoft.Playwright.Transport.Connection.InnerSendMessageToServerAsync[T](ChannelOwner object, String method, Dictionary`2 dictionary, Boolean keepNulls) in /_/src/Playwright/Transport/Connection.cs:line 206
+   at Microsoft.Playwright.Transport.Connection.WrapApiCallAsync[T](Func`1 action, Boolean isInternal) in /_/src/Playwright/Transport/Connection.cs:line 532
+   at Microsoft.Playwright.Core.Frame.WaitForSelectorAsync(String selector, FrameWaitForSelectorOptions options) in /_/src/Playwright/Core/Frame.cs:line 665
+   at RedditAnalyzer.Services.PlaywrightService.ProcessSubreddit(SubredditItem item, Int32 limit) in /app/Services/PlaywrightService.cs:line 79
+   at RedditAnalyzer.Services.PlaywrightService.ProcessSubreddit(SubredditItem item, Int32 limit) in /app/Services/PlaywrightService.cs:line 100
+2026-04-07 11:41:54.225 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-07 11:41:54.235 +00:00 [INF] Executed action RedditAnalyzer.Controllers.RedditController.AnalyzeWithPlaywright (RedditAnalyzer) in 33729.3007ms
+2026-04-07 11:41:54.249 +00:00 [INF] Executed endpoint 'RedditAnalyzer.Controllers.RedditController.AnalyzeWithPlaywright (RedditAnalyzer)'
+2026-04-07 11:41:54.269 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/reddit/playwright - 200 null application/json; charset=utf-8 33784.6193ms
+2026-04-07 11:41:56.317 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/reddit/playwright - application/json 116
+2026-04-07 11:41:56.346 +00:00 [INF] Executing endpoint 'RedditAnalyzer.Controllers.RedditController.AnalyzeWithPlaywright (RedditAnalyzer)'
+2026-04-07 11:41:56.360 +00:00 [INF] Route matched with {action = "AnalyzeWithPlaywright", controller = "Reddit"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AnalyzeWithPlaywright(RedditAnalyzer.Models.RequestModel) on controller RedditAnalyzer.Controllers.RedditController (RedditAnalyzer).
+2026-04-07 11:41:56.363 +00:00 [INF] 🚀 Playwright start r/nature
+2026-04-07 11:42:29.735 +00:00 [ERR] ❌ Помилка r/nature
+System.TimeoutException: Timeout 25000ms exceeded.
+Call log:
+  - waiting for Locator("[data-testid='post-container']") to be visible
+   at Microsoft.Playwright.Transport.Connection.InnerSendMessageToServerAsync[T](ChannelOwner object, String method, Dictionary`2 dictionary, Boolean keepNulls) in /_/src/Playwright/Transport/Connection.cs:line 206
+   at Microsoft.Playwright.Transport.Connection.WrapApiCallAsync[T](Func`1 action, Boolean isInternal) in /_/src/Playwright/Transport/Connection.cs:line 532
+   at Microsoft.Playwright.Core.Frame.WaitForSelectorAsync(String selector, FrameWaitForSelectorOptions options) in /_/src/Playwright/Core/Frame.cs:line 665
+   at RedditAnalyzer.Services.PlaywrightService.ProcessSubreddit(SubredditItem item, Int32 limit) in /app/Services/PlaywrightService.cs:line 79
+   at RedditAnalyzer.Services.PlaywrightService.ProcessSubreddit(SubredditItem item, Int32 limit) in /app/Services/PlaywrightService.cs:line 100
+2026-04-07 11:42:29.739 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-07 11:42:29.741 +00:00 [INF] Executed action RedditAnalyzer.Controllers.RedditController.AnalyzeWithPlaywright (RedditAnalyzer) in 33337.5302ms
+2026-04-07 11:42:29.744 +00:00 [INF] Executed endpoint 'RedditAnalyzer.Controllers.RedditController.AnalyzeWithPlaywright (RedditAnalyzer)'
+2026-04-07 11:42:29.747 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/reddit/playwright - 200 null application/json; charset=utf-8 33388.9235ms
+2026-04-07 11:49:54.078 +00:00 [INF] Application is shutting down...
+2026-04-07 11:49:55.397 +00:00 [WRN] Overriding HTTP_PORTS '8080' and HTTPS_PORTS ''. Binding to values defined by URLS instead 'http://+:8080'.
+2026-04-07 11:49:55.510 +00:00 [INF] Now listening on: http://[::]:8080
+2026-04-07 11:49:55.511 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-07 11:49:55.512 +00:00 [INF] Hosting environment: Production
+2026-04-07 11:49:55.521 +00:00 [INF] Content root path: /app
+2026-04-07 11:49:59.892 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/ - null null
+2026-04-07 11:49:59.940 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/ - 404 0 null 48.8044ms
+2026-04-07 11:49:59.955 +00:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/, Response status code: 404
+2026-04-07 11:50:04.348 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2026-04-07 11:50:04.470 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 122.503ms
+2026-04-07 11:50:04.653 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2026-04-07 11:50:04.729 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 75.7276ms
+2026-04-07 11:50:14.862 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/reddit - application/json 116
+2026-04-07 11:50:14.867 +00:00 [INF] Executing endpoint 'RedditAnalyzer.Controllers.RedditController.Analyze (RedditAnalyzer)'
+2026-04-07 11:50:14.918 +00:00 [INF] Route matched with {action = "Analyze", controller = "Reddit"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Analyze(RedditAnalyzer.Models.RequestModel) on controller RedditAnalyzer.Controllers.RedditController (RedditAnalyzer).
+2026-04-07 11:50:15.077 +00:00 [INF] Fetching HTML for r/nature
+2026-04-07 11:50:15.084 +00:00 [INF] Start processing HTTP request GET https://old.reddit.com/r/nature?limit=25
+2026-04-07 11:50:15.089 +00:00 [INF] Sending HTTP request GET https://old.reddit.com/r/nature?limit=25
+2026-04-07 11:50:17.186 +00:00 [INF] Received HTTP response headers after 2093.4923ms - 200
+2026-04-07 11:50:17.187 +00:00 [INF] End processing HTTP request after 2107.3584ms - 200
+2026-04-07 11:50:17.953 +00:00 [INF] Done for r/nature, found 1 posts
+2026-04-07 11:50:17.964 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-07 11:50:17.998 +00:00 [INF] Executed action RedditAnalyzer.Controllers.RedditController.Analyze (RedditAnalyzer) in 3067.1551ms
+2026-04-07 11:50:18.000 +00:00 [INF] Executed endpoint 'RedditAnalyzer.Controllers.RedditController.Analyze (RedditAnalyzer)'
+2026-04-07 11:50:18.003 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/reddit - 200 null application/json; charset=utf-8 3140.2754ms
+2026-04-07 11:50:19.887 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/reddit - application/json 116
+2026-04-07 11:50:19.891 +00:00 [INF] Executing endpoint 'RedditAnalyzer.Controllers.RedditController.Analyze (RedditAnalyzer)'
+2026-04-07 11:50:19.898 +00:00 [INF] Route matched with {action = "Analyze", controller = "Reddit"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Analyze(RedditAnalyzer.Models.RequestModel) on controller RedditAnalyzer.Controllers.RedditController (RedditAnalyzer).
+2026-04-07 11:50:19.904 +00:00 [INF] Fetching HTML for r/nature
+2026-04-07 11:50:19.907 +00:00 [INF] Start processing HTTP request GET https://old.reddit.com/r/nature?limit=25
+2026-04-07 11:50:19.911 +00:00 [INF] Sending HTTP request GET https://old.reddit.com/r/nature?limit=25
+2026-04-07 11:50:21.281 +00:00 [INF] Received HTTP response headers after 1367.8759ms - 200
+2026-04-07 11:50:21.282 +00:00 [INF] End processing HTTP request after 1375.2862ms - 200
+2026-04-07 11:50:21.616 +00:00 [INF] Done for r/nature, found 1 posts
+2026-04-07 11:50:21.630 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-07 11:50:21.637 +00:00 [INF] Executed action RedditAnalyzer.Controllers.RedditController.Analyze (RedditAnalyzer) in 1737.6928ms
+2026-04-07 11:50:21.643 +00:00 [INF] Executed endpoint 'RedditAnalyzer.Controllers.RedditController.Analyze (RedditAnalyzer)'
+2026-04-07 11:50:21.649 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/reddit - 200 null application/json; charset=utf-8 1762.1955ms
+2026-04-07 11:50:30.644 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/reddit/playwright - application/json 116
+2026-04-07 11:50:30.659 +00:00 [INF] Executing endpoint 'RedditAnalyzer.Controllers.RedditController.AnalyzeWithPlaywright (RedditAnalyzer)'
+2026-04-07 11:50:30.687 +00:00 [INF] Route matched with {action = "AnalyzeWithPlaywright", controller = "Reddit"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AnalyzeWithPlaywright(RedditAnalyzer.Models.RequestModel) on controller RedditAnalyzer.Controllers.RedditController (RedditAnalyzer).
+2026-04-07 11:50:30.716 +00:00 [INF] 🚀 Playwright NEW Reddit → r/nature
+2026-04-07 11:51:12.143 +00:00 [ERR] ❌ Playwright NEW Reddit помилка r/nature
+System.TimeoutException: Timeout 30000ms exceeded.
+Call log:
+  - waiting for Locator("shreddit-post, [data-testid='post-container'], article") to be visible
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+   at Microsoft.Playwright.Transport.Connection.InnerSendMessageToServerAsync[T](ChannelOwner object, String method, Dictionary`2 dictionary, Boolean keepNulls) in /_/src/Playwright/Transport/Connection.cs:line 206
+   at Microsoft.Playwright.Transport.Connection.WrapApiCallAsync[T](Func`1 action, Boolean isInternal) in /_/src/Playwright/Transport/Connection.cs:line 532
+   at Microsoft.Playwright.Core.Frame.WaitForSelectorAsync(String selector, FrameWaitForSelectorOptions options) in /_/src/Playwright/Core/Frame.cs:line 665
+   at RedditAnalyzer.Services.PlaywrightService.ProcessSubreddit(SubredditItem item, Int32 limit) in /app/Services/PlaywrightService.cs:line 83
+   at RedditAnalyzer.Services.PlaywrightService.ProcessSubreddit(SubredditItem item, Int32 limit) in /app/Services/PlaywrightService.cs:line 107
+2026-04-07 11:51:12.151 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-07 11:51:12.152 +00:00 [INF] Executed action RedditAnalyzer.Controllers.RedditController.AnalyzeWithPlaywright (RedditAnalyzer) in 41437.4042ms
+2026-04-07 11:51:12.157 +00:00 [INF] Executed endpoint 'RedditAnalyzer.Controllers.RedditController.AnalyzeWithPlaywright (RedditAnalyzer)'
+2026-04-07 11:51:12.162 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/reddit/playwright - 200 null application/json; charset=utf-8 41492.5883ms
+2026-04-07 11:51:21.390 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/reddit/playwright - application/json 116
+2026-04-07 11:51:21.398 +00:00 [INF] Executing endpoint 'RedditAnalyzer.Controllers.RedditController.AnalyzeWithPlaywright (RedditAnalyzer)'
+2026-04-07 11:51:21.411 +00:00 [INF] Route matched with {action = "AnalyzeWithPlaywright", controller = "Reddit"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AnalyzeWithPlaywright(RedditAnalyzer.Models.RequestModel) on controller RedditAnalyzer.Controllers.RedditController (RedditAnalyzer).
+2026-04-07 11:51:21.420 +00:00 [INF] 🚀 Playwright NEW Reddit → r/nature
+2026-04-07 11:52:02.543 +00:00 [ERR] ❌ Playwright NEW Reddit помилка r/nature
+System.TimeoutException: Timeout 30000ms exceeded.
+Call log:
+  - waiting for Locator("shreddit-post, [data-testid='post-container'], article") to be visible
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+  -   locator resolved to 83 elements. Proceeding with the first one: <article id="menu" faceplate-popper-content="">…</article>
+   at Microsoft.Playwright.Transport.Connection.InnerSendMessageToServerAsync[T](ChannelOwner object, String method, Dictionary`2 dictionary, Boolean keepNulls) in /_/src/Playwright/Transport/Connection.cs:line 206
+   at Microsoft.Playwright.Transport.Connection.WrapApiCallAsync[T](Func`1 action, Boolean isInternal) in /_/src/Playwright/Transport/Connection.cs:line 532
+   at Microsoft.Playwright.Core.Frame.WaitForSelectorAsync(String selector, FrameWaitForSelectorOptions options) in /_/src/Playwright/Core/Frame.cs:line 665
+   at RedditAnalyzer.Services.PlaywrightService.ProcessSubreddit(SubredditItem item, Int32 limit) in /app/Services/PlaywrightService.cs:line 83
+   at RedditAnalyzer.Services.PlaywrightService.ProcessSubreddit(SubredditItem item, Int32 limit) in /app/Services/PlaywrightService.cs:line 107
+2026-04-07 11:52:02.559 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-07 11:52:02.560 +00:00 [INF] Executed action RedditAnalyzer.Controllers.RedditController.AnalyzeWithPlaywright (RedditAnalyzer) in 41111.6092ms
+2026-04-07 11:52:02.562 +00:00 [INF] Executed endpoint 'RedditAnalyzer.Controllers.RedditController.AnalyzeWithPlaywright (RedditAnalyzer)'
+2026-04-07 11:52:02.563 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/reddit/playwright - 200 null application/json; charset=utf-8 41142.2706ms
+2026-04-07 11:54:50.264 +00:00 [INF] Application is shutting down...
+2026-04-07 12:00:40.725 +00:00 [WRN] Overriding HTTP_PORTS '8080' and HTTPS_PORTS ''. Binding to values defined by URLS instead 'http://+:8080'.
+2026-04-07 12:00:40.867 +00:00 [INF] Now listening on: http://[::]:8080
+2026-04-07 12:00:40.872 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-07 12:00:40.880 +00:00 [INF] Hosting environment: Production
+2026-04-07 12:00:40.882 +00:00 [INF] Content root path: /app
+2026-04-07 12:00:45.759 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/ - null null
+2026-04-07 12:00:45.802 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/ - 404 0 null 44.0558ms
+2026-04-07 12:00:45.837 +00:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/, Response status code: 404
+2026-04-07 12:00:49.097 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2026-04-07 12:00:49.186 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 89.4308ms
+2026-04-07 12:00:49.385 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2026-04-07 12:00:49.468 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 82.8737ms
+2026-04-07 12:00:59.438 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/reddit - application/json 116
+2026-04-07 12:00:59.442 +00:00 [INF] Executing endpoint 'RedditAnalyzer.Controllers.RedditController.Analyze (RedditAnalyzer)'
+2026-04-07 12:00:59.468 +00:00 [INF] Route matched with {action = "Analyze", controller = "Reddit"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Analyze(RedditAnalyzer.Models.RequestModel) on controller RedditAnalyzer.Controllers.RedditController (RedditAnalyzer).
+2026-04-07 12:00:59.572 +00:00 [INF] Fetching HTML for r/nature
+2026-04-07 12:00:59.581 +00:00 [INF] Start processing HTTP request GET https://old.reddit.com/r/nature?limit=25
+2026-04-07 12:00:59.585 +00:00 [INF] Sending HTTP request GET https://old.reddit.com/r/nature?limit=25
+2026-04-07 12:01:04.499 +00:00 [INF] Received HTTP response headers after 4906.5708ms - 200
+2026-04-07 12:01:04.501 +00:00 [INF] End processing HTTP request after 4925.4382ms - 200
+2026-04-07 12:01:04.710 +00:00 [INF] Done for r/nature, found 1 posts
+2026-04-07 12:01:04.722 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-07 12:01:04.742 +00:00 [INF] Executed action RedditAnalyzer.Controllers.RedditController.Analyze (RedditAnalyzer) in 5266.693ms
+2026-04-07 12:01:04.748 +00:00 [INF] Executed endpoint 'RedditAnalyzer.Controllers.RedditController.Analyze (RedditAnalyzer)'
+2026-04-07 12:01:04.759 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/reddit - 200 null application/json; charset=utf-8 5320.7052ms
+2026-04-07 12:01:06.070 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/reddit - application/json 116
+2026-04-07 12:01:06.079 +00:00 [INF] Executing endpoint 'RedditAnalyzer.Controllers.RedditController.Analyze (RedditAnalyzer)'
+2026-04-07 12:01:06.085 +00:00 [INF] Route matched with {action = "Analyze", controller = "Reddit"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Analyze(RedditAnalyzer.Models.RequestModel) on controller RedditAnalyzer.Controllers.RedditController (RedditAnalyzer).
+2026-04-07 12:01:06.095 +00:00 [INF] Fetching HTML for r/nature
+2026-04-07 12:01:06.097 +00:00 [INF] Start processing HTTP request GET https://old.reddit.com/r/nature?limit=25
+2026-04-07 12:01:06.103 +00:00 [INF] Sending HTTP request GET https://old.reddit.com/r/nature?limit=25
+2026-04-07 12:01:10.616 +00:00 [INF] Received HTTP response headers after 4511.2895ms - 200
+2026-04-07 12:01:10.621 +00:00 [INF] End processing HTTP request after 4524.5099ms - 200
+2026-04-07 12:01:11.118 +00:00 [INF] Done for r/nature, found 1 posts
+2026-04-07 12:01:11.120 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-07 12:01:11.122 +00:00 [INF] Executed action RedditAnalyzer.Controllers.RedditController.Analyze (RedditAnalyzer) in 5033.4869ms
+2026-04-07 12:01:11.125 +00:00 [INF] Executed endpoint 'RedditAnalyzer.Controllers.RedditController.Analyze (RedditAnalyzer)'
+2026-04-07 12:01:11.127 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/reddit - 200 null application/json; charset=utf-8 5056.5422ms
+2026-04-07 12:01:25.918 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/reddit/playwright - application/json 116
+2026-04-07 12:01:25.942 +00:00 [INF] Executing endpoint 'RedditAnalyzer.Controllers.RedditController.AnalyzeWithPlaywright (RedditAnalyzer)'
+2026-04-07 12:01:25.995 +00:00 [INF] Route matched with {action = "AnalyzeWithPlaywright", controller = "Reddit"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AnalyzeWithPlaywright(RedditAnalyzer.Models.RequestModel) on controller RedditAnalyzer.Controllers.RedditController (RedditAnalyzer).
+2026-04-07 12:01:26.009 +00:00 [INF] 🚀 Playwright NEW Reddit → r/nature
+2026-04-07 12:01:39.286 +00:00 [INF] Знайдено 52 shreddit-post
+2026-04-07 12:01:39.845 +00:00 [INF] ✅ NEW Reddit r/nature → 1 постів
+2026-04-07 12:01:39.919 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-07 12:01:39.926 +00:00 [INF] Executed action RedditAnalyzer.Controllers.RedditController.AnalyzeWithPlaywright (RedditAnalyzer) in 13929.1004ms
+2026-04-07 12:01:39.929 +00:00 [INF] Executed endpoint 'RedditAnalyzer.Controllers.RedditController.AnalyzeWithPlaywright (RedditAnalyzer)'
+2026-04-07 12:01:39.938 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/reddit/playwright - 200 null application/json; charset=utf-8 14019.6408ms
+2026-04-07 12:08:51.477 +00:00 [INF] Application is shutting down...
+2026-04-07 12:08:53.030 +00:00 [WRN] Overriding HTTP_PORTS '8080' and HTTPS_PORTS ''. Binding to values defined by URLS instead 'http://+:8080'.
+2026-04-07 12:08:53.155 +00:00 [INF] Now listening on: http://[::]:8080
+2026-04-07 12:08:53.158 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-07 12:08:53.160 +00:00 [INF] Hosting environment: Production
+2026-04-07 12:08:53.162 +00:00 [INF] Content root path: /app
+2026-04-07 12:09:02.075 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/ - null null
+2026-04-07 12:09:02.110 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/ - 404 0 null 36.4084ms
+2026-04-07 12:09:02.123 +00:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/, Response status code: 404
+2026-04-07 12:09:07.705 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2026-04-07 12:09:07.787 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 81.5356ms
+2026-04-07 12:09:07.983 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2026-04-07 12:09:08.053 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 70.8294ms
+2026-04-07 12:09:20.936 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/reddit - application/json 116
+2026-04-07 12:09:20.943 +00:00 [INF] Executing endpoint 'RedditAnalyzer.Controllers.RedditController.Analyze (RedditAnalyzer)'
+2026-04-07 12:09:21.000 +00:00 [INF] Route matched with {action = "Analyze", controller = "Reddit"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Analyze(RedditAnalyzer.Models.RequestModel) on controller RedditAnalyzer.Controllers.RedditController (RedditAnalyzer).
+2026-04-07 12:09:21.087 +00:00 [INF] Fetching HTML for r/nature
+2026-04-07 12:09:21.098 +00:00 [INF] Start processing HTTP request GET https://old.reddit.com/r/nature?limit=25
+2026-04-07 12:09:21.105 +00:00 [INF] Sending HTTP request GET https://old.reddit.com/r/nature?limit=25
+2026-04-07 12:09:22.694 +00:00 [INF] Received HTTP response headers after 1582.5537ms - 200
+2026-04-07 12:09:22.706 +00:00 [INF] End processing HTTP request after 1611.4225ms - 200
+2026-04-07 12:09:22.971 +00:00 [INF] Done for r/nature, found 1 posts
+2026-04-07 12:09:22.985 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-07 12:09:23.015 +00:00 [INF] Executed action RedditAnalyzer.Controllers.RedditController.Analyze (RedditAnalyzer) in 2002.4052ms
+2026-04-07 12:09:23.017 +00:00 [INF] Executed endpoint 'RedditAnalyzer.Controllers.RedditController.Analyze (RedditAnalyzer)'
+2026-04-07 12:09:23.019 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/reddit - 200 null application/json; charset=utf-8 2083.0281ms
+2026-04-07 12:09:27.627 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/reddit - application/json 116
+2026-04-07 12:09:27.643 +00:00 [INF] Executing endpoint 'RedditAnalyzer.Controllers.RedditController.Analyze (RedditAnalyzer)'
+2026-04-07 12:09:27.648 +00:00 [INF] Route matched with {action = "Analyze", controller = "Reddit"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Analyze(RedditAnalyzer.Models.RequestModel) on controller RedditAnalyzer.Controllers.RedditController (RedditAnalyzer).
+2026-04-07 12:09:27.661 +00:00 [INF] Fetching HTML for r/nature
+2026-04-07 12:09:27.669 +00:00 [INF] Start processing HTTP request GET https://old.reddit.com/r/nature?limit=25
+2026-04-07 12:09:27.673 +00:00 [INF] Sending HTTP request GET https://old.reddit.com/r/nature?limit=25
+2026-04-07 12:09:28.575 +00:00 [INF] Received HTTP response headers after 897.9853ms - 200
+2026-04-07 12:09:28.577 +00:00 [INF] End processing HTTP request after 907.7696ms - 200
+2026-04-07 12:09:28.826 +00:00 [INF] Done for r/nature, found 1 posts
+2026-04-07 12:09:28.834 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-07 12:09:28.838 +00:00 [INF] Executed action RedditAnalyzer.Controllers.RedditController.Analyze (RedditAnalyzer) in 1184.0448ms
+2026-04-07 12:09:28.840 +00:00 [INF] Executed endpoint 'RedditAnalyzer.Controllers.RedditController.Analyze (RedditAnalyzer)'
+2026-04-07 12:09:28.843 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/reddit - 200 null application/json; charset=utf-8 1215.5239ms
+2026-04-07 12:09:58.702 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/reddit/playwright - application/json 116
+2026-04-07 12:09:58.705 +00:00 [INF] Executing endpoint 'RedditAnalyzer.Controllers.RedditController.AnalyzeWithPlaywright (RedditAnalyzer)'
+2026-04-07 12:09:58.723 +00:00 [INF] Route matched with {action = "AnalyzeWithPlaywright", controller = "Reddit"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AnalyzeWithPlaywright(RedditAnalyzer.Models.RequestModel) on controller RedditAnalyzer.Controllers.RedditController (RedditAnalyzer).
+2026-04-07 12:09:58.738 +00:00 [INF] Playwright NEW Reddit → r/nature
+2026-04-07 12:10:11.828 +00:00 [INF] Найдены 52 shreddit-post
+2026-04-07 12:10:12.365 +00:00 [INF] NEW Reddit r/nature → 1 постів
+2026-04-07 12:10:12.432 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-07 12:10:12.433 +00:00 [INF] Executed action RedditAnalyzer.Controllers.RedditController.AnalyzeWithPlaywright (RedditAnalyzer) in 13708.6391ms
+2026-04-07 12:10:12.446 +00:00 [INF] Executed endpoint 'RedditAnalyzer.Controllers.RedditController.AnalyzeWithPlaywright (RedditAnalyzer)'
+2026-04-07 12:10:12.448 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/reddit/playwright - 200 null application/json; charset=utf-8 13746.7251ms
+2026-04-07 12:10:26.347 +00:00 [INF] Application is shutting down...

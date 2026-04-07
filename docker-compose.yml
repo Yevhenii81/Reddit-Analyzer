@@ -1,0 +1,10 @@
+services:
+  reddit-analyzer:
+    build: .
+    ports:
+      - "5000:8080"
+    volumes:
+      - ./logs:/app/logs
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - PLAYWRIGHT_BROWSERS_PATH=/root/.cache/ms-playwright
